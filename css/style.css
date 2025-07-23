@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Regular.woff') format('woff'),
+        url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Medium.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Medium.woff') format('woff'),
+        url('../fonts/RobotoSlab-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Arial";
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+ text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    display: block;
+    text-transform: uppercase;
+}
+
+hr {
+    display: block;
+    width: 713px;
+    height: 1px;
+    background-color: #e4e4ec;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.flex_betwen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #1f1f56;
+    align-items: center;
+}
+header a  {
+     color: #b1b1d2;
+}
+ 
+.nav {
+    gap: 30px;
+}
+.progu {
+    gap: 26px;
+}
+.wrapper {
+     margin: 0 auto;
+     width: 85%;
+}
+
+.head {
+    padding-top: 29px;
+    padding-bottom: 29px;
+}
+.head a {
+    color: #25252c;
+}
+.maila {
+    gap: 10px;
+}
+.button a {
+    padding: 14px 27px ;
+    text-align: center;
+    display: inline-block;
+    color: #25252c;
+    border-radius: 25px;
+    border: 2px solid #fd8300;
+}
+
+section {
+    padding-top: 58px;
+    padding-bottom: 58px;
+    background-image: url(../img/Rectangle.png);
+    width: 100%;
+    text-align: center;
+}
+
+section p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.prize {
+    display: inline-block;
+    font-size: 40px;
+    color: #fd8300;
+    line-height: 56px;
+}
+
+article {
+    padding-top: 31px;
+}
+
+article p {
+    padding-bottom: 21px;
+    width: 677px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+article a {
+    display: inline-block;
+    padding-bottom: 34px;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #fd8300;
+}
+
+.zagolovok  {
+    padding-bottom: 27px;
+    font-size: 30px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.nazva b {
+    font-size: 14px;
+    line-height: 24px;
+    color: #1f1f56;
+}
+.cartku  {
+    gap: 17px;
+    padding-bottom: 50px;
+}
+.cartku p {
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+}
+
