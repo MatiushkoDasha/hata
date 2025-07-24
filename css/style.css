@@ -98,11 +98,7 @@ header a  {
      color: #b1b1d2;
 }
 
-.contaktu:hover a{
-    color: #fd8300;
-}
-
-.mail:hover a{
+.rizne:hover {
     color: #fd8300;
 }
 
@@ -234,7 +230,7 @@ article p {
 }
 
 .nazva:hover b {
-    color: #fd8300;
+   text-decoration: underline;
 }
 .cartku  {
     gap: 17px;
@@ -310,7 +306,7 @@ article p {
 }
 
 .infor:hover a {
-    color: #1f1f56;
+    color: #fd8300;
 }
 
 footer {
