@@ -72,6 +72,11 @@ hr {
     align-items: center;
 }
 
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+}
+
 header {
     padding-top: 18px;
     padding-bottom: 18px;
@@ -90,18 +95,24 @@ header a  {
 }
 .wrapper {
      margin: 0 auto;
-     width: 85%;
+     width: 75%;
 }
 
 .head {
     padding-top: 29px;
     padding-bottom: 29px;
 }
-.head a {
+
+.head a  {
     color: #25252c;
 }
-.maila {
-    gap: 10px;
+
+.contaktu a {
+       color: #25252c;
+}
+
+.mail a {
+     color: #25252c;
 }
 .button a {
     padding: 14px 27px ;
@@ -133,8 +144,9 @@ section p {
     line-height: 56px;
 }
 
-article {
-    padding-top: 31px;
+.bloku {
+    align-items: flex-start;
+    padding-top:31px ;
 }
 
 article p {
@@ -216,4 +228,29 @@ article a {
 .other {
     width: 100%;
      background-color: #e4e4ec;
+}
+
+.mainfooter {
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ededf5;
+}
+
+.info li a {
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+}
+
+footer {
+    padding: 13px ;
+    background-color: #dcdce6;
+    text-align: center;
+}
+
+footer {
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
 }
