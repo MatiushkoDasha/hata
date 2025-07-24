@@ -33,6 +33,7 @@
 }
 body {
     font-family: "Arial";
+    cursor: url(../img/cursor.cur),default;
 }
 
 ul {
@@ -40,7 +41,8 @@ ul {
 }
 
 a {
- text-decoration: none;
+    cursor: url(../img/tuk.cur),default;
+    text-decoration: none;
 }
 
 h1 {
@@ -126,7 +128,7 @@ header a  {
 section {
     padding-top: 58px;
     padding-bottom: 58px;
-    background-image: url(../img/Rectangle.png);
+    background: url(../img/Rectangle.png) no-repeat , center/cover;
     width: 100%;
     text-align: center;
 }
@@ -221,13 +223,15 @@ article a {
     font-weight: 700;
 }
 
-.orange  {
+.orange:hover {
+    color: #fff;
     background-color: #fd8300;
 }
 
-.other {
-    width: 100%;
-     background-color: #e4e4ec;
+.rad  li {
+    color: #666666;
+    box-shadow: none;
+    background-color: #e4e4ec;
 }
 
 .mainfooter {
