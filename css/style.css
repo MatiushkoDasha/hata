@@ -44,6 +44,9 @@ a {
     cursor: url(../img/tuk.cur),default;
     text-decoration: none;
 }
+svg {
+    fill: #fd8300;
+}
 
 h1 {
     font-size: 30px;
@@ -85,19 +88,38 @@ header {
     background-color: #1f1f56;
     align-items: center;
 }
+header svg {
+    fill: #fff;
+}
+.he:hover  {
+    fill: #fd8300;
+}
 header a  {
      color: #b1b1d2;
+}
+
+.contaktu:hover a{
+    color: #fd8300;
+}
+
+.mail:hover a{
+    color: #fd8300;
+}
+
+.forhover:hover a {
+    color:#fd8300;
 }
  
 .nav {
     gap: 30px;
 }
-.progu {
+.progu  {
     gap: 26px;
 }
+
 .wrapper {
      margin: 0 auto;
-     width: 75%;
+     max-width: 960px;
 }
 
 .head {
@@ -110,11 +132,25 @@ header a  {
 }
 
 .contaktu a {
+    line-height: 25px;
        color: #25252c;
 }
 
+.contaktu svg {
+    padding-right: 10px;
+}
+
+.vids {
+    padding-left: 32px;
+}
+
 .mail a {
+    line-height: 25px;
      color: #25252c;
+}
+
+.mail svg {
+    padding-right: 1px;
 }
 .button a {
     padding: 14px 27px ;
@@ -125,10 +161,14 @@ header a  {
     border: 2px solid #fd8300;
 }
 
+.button:hover a{
+    color: #fd8300;
+}
+
 section {
     padding-top: 58px;
     padding-bottom: 58px;
-    background: url(../img/Rectangle.png) no-repeat , center/cover;
+    background: url(../img/Rectangle.png) no-repeat center/cover;
     width: 100%;
     text-align: center;
 }
@@ -158,13 +198,17 @@ article p {
     line-height: 24px;
     color: #666666;
 }
-article a {
+.detail  {
     display: inline-block;
     padding-bottom: 34px;
     font-size: 14px;
     line-height: 24px;
     text-decoration: underline;
     color: #fd8300;
+}
+
+.detail:hover {
+    color: #1f1f56;
 }
 
 .zagolovok  {
@@ -188,6 +232,10 @@ article a {
     line-height: 24px;
     color: #1f1f56;
 }
+
+.nazva:hover b {
+    color: #fd8300;
+}
 .cartku  {
     gap: 17px;
     padding-bottom: 50px;
@@ -201,8 +249,13 @@ article a {
 .sidebar  {
     align-items: flex-end;
     background-color: #e4e4ec;
+      
 }
 
+.sidebar  {
+    border-radius: 3px; 
+    overflow: hidden;
+}
 .sidebar li {
     padding: 8px 19px;
     font-size: 14px;
@@ -212,7 +265,6 @@ article a {
 }
 
 .headsidebar {
-    border-radius: 3px;
     background-color: #1f1f56;
     }
 
@@ -228,10 +280,20 @@ article a {
     background-color: #fd8300;
 }
 
+.rad {
+    padding: -8px -19px;
+}
 .rad  li {
     color: #666666;
     box-shadow: none;
     background-color: #e4e4ec;
+}
+
+.rad:hover ul {
+    padding: 16px 38px;
+}
+.lol:hover {
+    background-color: #cecedd;
 }
 
 .mainfooter {
@@ -245,6 +307,10 @@ article a {
     font-size: 14px;
     line-height: 26px;
     color: #666666;
+}
+
+.infor:hover a {
+    color: #1f1f56;
 }
 
 footer {
