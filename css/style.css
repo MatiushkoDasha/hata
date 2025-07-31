@@ -82,8 +82,7 @@ hr {
 }
 
 header {
-    padding-top: 18px;
-    padding-bottom: 18px;
+padding: 16px 0;
     background-color: #1f1f56;
     align-items: center;
 }
@@ -222,13 +221,13 @@ article p {
     font-weight: 700;
     font-family: "Roboto Slab";
 }
-.nazva b {
+.nazva  {
     font-size: 14px;
     line-height: 24px;
     color: #1f1f56;
 }
 
-.nazva:hover b {
+.nazva:hover  {
    text-decoration: underline;
 }
 .cartku  {
@@ -252,7 +251,7 @@ article p {
     overflow: hidden;
 }
 .sidebar li {
-    padding: 8px 19px;
+    padding: 8px 27px;
     font-size: 14px;
     line-height: 29px;
     color: #25252c;
@@ -275,26 +274,20 @@ article p {
     background-color: #fd8300;
 }
 
-.rad {
-    padding: -8px -19px;
-}
 .rad  li {
     color: #666666;
-    box-shadow: none;
     background-color: #e4e4ec;
+    box-shadow: none;
 }
 
-.rad:hover ul {
-    padding: 16px 38px;
-}
 .lol:hover {
     background-color: #cecedd;
 }
 
 .mainfooter {
     align-items: flex-start;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 27px;
+    padding-bottom: 27px;
     background-color: #ededf5;
 }
 
