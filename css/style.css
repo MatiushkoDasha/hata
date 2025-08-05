@@ -37,6 +37,8 @@ body {
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -273,6 +275,13 @@ article p {
     color: #fff;
     background-color: #fd8300;
 }
+.orange:hover> .rad {
+    display: block;
+}
+
+.rad {
+    display: none;
+}
 
 .rad  li {
     color: #666666;
@@ -299,6 +308,7 @@ article p {
 
 .infor:hover a {
     color: #fd8300;
+    text-decoration: underline;
 }
 
 footer {
