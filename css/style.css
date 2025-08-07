@@ -253,14 +253,42 @@ article p {
     overflow: hidden;
 }
 .sidebar li {
+    box-shadow: inset 0px -1px 0px #cecedd;
+}
+
+.orange a {
+    position: relative;
+    display: block;
     padding: 8px 27px;
     font-size: 14px;
     line-height: 29px;
     color: #25252c;
-    box-shadow: inset 0px -1px 0px #cecedd;
+}
+
+.orange a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #666666;
+    border-right: 1px solid #666666;
+    transform: translateY(-50%) rotate(45deg);
+    transition: all 0,8s ease;
+}
+
+li:hover >a:before {
+    border-color: #ededf5;
+    transform: translateY(-50%) rotate(135deg);
 }
 
 .headsidebar {
+    display: block;
+    padding: 8px 27px;
+    font-size: 14px;
+    line-height: 29px;
     background-color: #1f1f56;
     }
 
@@ -271,7 +299,7 @@ article p {
     font-weight: 700;
 }
 
-.orange:hover {
+.orange:hover a {
     color: #fff;
     background-color: #fd8300;
 }
@@ -288,7 +316,12 @@ article p {
     background-color: #e4e4ec;
     box-shadow: none;
 }
-
+.lol {
+    display: block;
+    padding: 8px 27px;
+    font-size: 14px;
+    line-height: 29px;
+}
 .lol:hover {
     background-color: #cecedd;
 }
