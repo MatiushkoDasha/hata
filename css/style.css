@@ -51,14 +51,15 @@ svg {
 }
 
 h1 {
+    display: block;
     font-size: 30px;
+    padding-bottom: 5px;
     letter-spacing: 2px;
+    line-height: 24px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
-    display: block;
-    text-transform: uppercase;
 }
 
 hr {
@@ -76,6 +77,12 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.flexstart {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .flex_between {
@@ -100,10 +107,12 @@ header a  {
 
 .rizne:hover {
     color: #fd8300;
+    transition: all 0.6s ease;
 }
 
 .forhover:hover a {
     color:#fd8300;
+    transition: all 0.6s ease;
 }
  
 .nav {
@@ -128,16 +137,15 @@ header a  {
 }
 
 .contaktu a {
-    line-height: 25px;
-       color: #25252c;
+    font-size: 18px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
 }
 
-.contaktu svg {
-    padding-right: 10px;
-}
-
-.vids {
-    padding-left: 32px;
+.telll {
+    display: flex;
+    flex-direction: column;
 }
 
 .mail a {
@@ -159,27 +167,30 @@ header a  {
 
 .button:hover a{
     color: #fd8300;
+    transition: all 0.6s ease;
 }
 
-section {
+.section {
     padding-top: 58px;
     padding-bottom: 58px;
-    background: url(../img/Rectangle.png) no-repeat center/cover;
+    background: url(../img/Rectangle.webp~) no-repeat center/cover;
     width: 100%;
     text-align: center;
 }
 
 section p {
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 24px;
+font-size: 14px;
+line-height: 24px;
+color: #ffffff;
+
 }
 
 .prize {
-    display: inline-block;
-    font-size: 40px;
-    color: #fd8300;
-    line-height: 56px;
+font-size: 40px;
+line-height: 24px;
+padding-top: 4px;
+color: #fd8300;
+font-weight: bold;
 }
 
 .bloku {
@@ -187,16 +198,17 @@ section p {
     padding-top:31px ;
 }
 
+article {
+     padding-bottom: 34px;
+}
 article p {
-    padding-bottom: 21px;
-    width: 677px;
     font-size: 14px;
     line-height: 24px;
+    padding-bottom: 14px;
     color: #666666;
 }
 .detail  {
     display: inline-block;
-    padding-bottom: 34px;
     font-size: 14px;
     line-height: 24px;
     text-decoration: underline;
@@ -205,6 +217,7 @@ article p {
 
 .detail:hover {
     color: #1f1f56;
+    transition: all 0.6s ease;
 }
 
 .zagolovok  {
@@ -231,6 +244,7 @@ article p {
 
 .nazva:hover  {
    text-decoration: underline;
+   transition: all 0.6s ease;
 }
 .cartku  {
     gap: 17px;
@@ -259,9 +273,9 @@ article p {
 .orange a {
     position: relative;
     display: block;
-    padding: 8px 27px;
+    padding: 10px 15px;
     font-size: 14px;
-    line-height: 29px;
+    line-height: 24px;
     color: #25252c;
 }
 
@@ -276,7 +290,7 @@ article p {
     border-top: 1px solid #666666;
     border-right: 1px solid #666666;
     transform: translateY(-50%) rotate(45deg);
-    transition: all 0,8s ease;
+    transition: all 0.6s ease;
 }
 
 li:hover >a:before {
@@ -284,24 +298,29 @@ li:hover >a:before {
     transform: translateY(-50%) rotate(135deg);
 }
 
-.headsidebar {
+.headsidebar  {
     display: block;
-    padding: 8px 27px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 51px;
     font-size: 14px;
     line-height: 29px;
     background-color: #1f1f56;
     }
 
-.headsidebar b {
+.headsidebar p {
     font-size: 16px;
     line-height: 24px;
     color: #ffffff;
     font-weight: 700;
+    font-family: "Roboto Slab";
 }
 
 .orange:hover a {
     color: #fff;
     background-color: #fd8300;
+    transition: all 0.6s ease;
 }
 .orange:hover> .rad {
     display: block;
@@ -313,7 +332,8 @@ li:hover >a:before {
 
 .rad  li {
     color: #666666;
-    background-color: #e4e4ec;
+    border-bottom:  #cecedd;
+    background-color:  #e4e4ec;
     box-shadow: none;
 }
 .lol {
@@ -324,12 +344,13 @@ li:hover >a:before {
 }
 .lol:hover {
     background-color: #cecedd;
+    transition: all 0.6s ease;
 }
 
 .mainfooter {
     align-items: flex-start;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    padding-top: 41px;
+    padding-bottom: 30px;
     background-color: #ededf5;
 }
 
@@ -342,6 +363,7 @@ li:hover >a:before {
 .infor:hover a {
     color: #fd8300;
     text-decoration: underline;
+    transition: all 0.6s ease;
 }
 
 footer {

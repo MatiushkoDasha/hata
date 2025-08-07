@@ -35,18 +35,20 @@
     </header>
     <main>
         <div class="head wrapper flex_betwen">
-            <a href="">
+            <a href="#">
                 <picture>
                     <source source srcset="img/logo.webp" type="image/webp">
                     <img src="img/logo.png" alt="логотип хата плюс">
                 </picture>
             </a>
-            <div class="contaktu">  
+            <div class="contaktu flexstart ">  
                 <a href="tel:+380971002525"> 
                     <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" width="17" height="17"><path class="a" d="m1.5 1.5q-0.3 0-0.4 0.2-0.2 0.2-0.2 0.5 0 3.9 2 7.3 1.9 3.3 5.2 5.2 3.4 2 7.4 2 0.2 0 0.5-0.2 0.2-0.1 0.2-0.4l0.8-3.3q0-0.2-0.1-0.5-0.1-0.2-0.4-0.3l-3.5-1.5q-0.2-0.1-0.5 0-0.2 0-0.4 0.2l-1.5 1.9q-1.9-0.9-3.3-2.3-1.4-1.4-2.3-3.2l1.9-1.6q0.2-0.2 0.3-0.4 0-0.2-0.1-0.5l-1.5-3.5q-0.1-0.2-0.3-0.3-0.3-0.2-0.5-0.1z"/></svg>
-                    <b class="rizne">+38(097) 100-25-25</b><br>
-                    <b class="vids rizne">+38(097) 100-25-25</b> 
                 </a>
+                    <ul>
+                        <li><a class="rizne" href="tel:+380971002525">+38(097) 100-25-25</a><br></li>
+                        <a class="  rizne" href="tel:+380971002525">+38(097) 100-25-25</a>
+                    </ul>
             </div>
             <div class="mail">
                 <a href="mailto:hataplus@hata.com.ua"  class="flex rizne ">
@@ -62,10 +64,10 @@
                 <a href="#"><b>Замовити дзвінок</b></a>
             </div>
         </div>
-        <section>
+        <section class="section">
             <h1> Пропозиція місяця</h1>
             <p>Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
-            <p class="prize"><b>5999 грн / м<sup>2</sup></b></p>
+            <p class="prize">5999 грн / м<sup>2</sup></p>
         </section>
         <div class="wrapper">
             <div class=" bloku flex_between">
@@ -81,10 +83,10 @@
                             на якому можна не тільки посадити сад, але облаштувати зону відпочинку, спорудити сауну, поставити <br>
                             альтанку і барбекю.</p>
                         <a href="#" class="detail"><b>Детальніше про нас</b></a>
-                        <hr>
                     </article>
-                    <div class="project ">
-                        <p class="usproject">Популярні проекти</p>
+                    <hr>
+                    <section class="project ">
+                        <h2 class="usproject">Популярні проекти</h2>
                         <div class="cartku flex">
                             <figure>
                                 <figaption>
@@ -92,8 +94,8 @@
                                         <source source srcset="img/hata1.webp" type="image/webp">
                                         <img src="img/hata1.png" alt="">
                                     </picture>
-                                    <h3 class="nazva">EDMONTON (338 м2)</h3>
-                                    <p>Загальна площа будови: 312 м2<br>
+                                    <h3 class="nazva">EDMONTON (338 м<sup>2</sup>)</h3>
+                                    <p>Загальна площа будови: 312 м<sup>2</sup><br>
                                     Кількість спалень: 4 <br>
                                     Гараж: 2 авто</p>
                                 </figaption>
@@ -101,8 +103,8 @@
                             <figure>
                                 <figaption>
                                     <picture><source source srcset="img/hata2.webp" type="image/webp"><img src="img/hata2.png" alt=""></picture>
-                                    <h3 class="nazva">MONTREAL (332 м2)</h3>
-                                    <p>Загальна площа будови: 290 м2 <br>
+                                    <h3 class="nazva">MONTREAL (332 м<sup>2</sup>)</h3>
+                                    <p>Загальна площа будови: 290 м<sup>2</sup> <br>
                                     Кількість спалень: 3 <br>
                                     Гараж: 2 авто</p>
                                 </figaption>
@@ -110,19 +112,19 @@
                             <figure>
                                 <figaption>
                                     <picture><source source srcset="img/hata3.webp" type="image/webp"><img src="img/hata3.png" alt=""></picture>
-                                    <h3 class="nazva">CALGARY (294 м2)</h3>
-                                    <p>Загальна площа будови: 272 м2 <br>
+                                    <h3 class="nazva">CALGARY (294 м<sup>2</sup>)</h3>
+                                    <p>Загальна площа будови: 272 м<sup>2</sup> <br>
                                     Кількість спалень: 3 <br>
                                     Гараж: 2 авто</p>
                                 </figaption>
                             </figure>
                         </div>
-                    </div>
+                    </section>
                 </div>
                 <div class="sidebar ">
                     <nav>
                         <ul>
-                            <li class="headsidebar"><a href=""><b>Категорії проектів</b></a></li>
+                            <li class="headsidebar"><p>Категорії проектів</p></li>
                             <li class="orange"><a href="">Генеральний план</a></li>
                             <li class="orange"><a href=""> Навколишнє середовище</a>
                                 <ul class="rad">
@@ -141,9 +143,9 @@
             </div>
         </div>
         <div class="mainfooter">
-            <div class="info wrapper flex_between">
+            <div class=" wrapper flex_between">
                 <nav>
-                    <ul>
+                    <ul class="info">
                         <li class="infor"><a href="#">Будинки</a></li>
                         <li class="infor"><a href="#">Інфраструктура</a></li>
                         <li class="infor"><a href="#">Сервіс</a></li>
@@ -151,19 +153,21 @@
                     </ul>
                 </nav>
                 <nav>
-                    <ul>
+                    <ul class="info">
                         <li class="infor"><a href="#">Про компанію</a></li>
                         <li class="infor"><a href="#">Страхування</a></li>
                         <li class="infor"><a href="#">Контакти</a></li>
                     </ul>
                 </nav>
-                  <div class="contaktu">  
-                <a href="tel:+380971002525"> 
-                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" width="17" height="17"><path class="a" d="m1.5 1.5q-0.3 0-0.4 0.2-0.2 0.2-0.2 0.5 0 3.9 2 7.3 1.9 3.3 5.2 5.2 3.4 2 7.4 2 0.2 0 0.5-0.2 0.2-0.1 0.2-0.4l0.8-3.3q0-0.2-0.1-0.5-0.1-0.2-0.4-0.3l-3.5-1.5q-0.2-0.1-0.5 0-0.2 0-0.4 0.2l-1.5 1.9q-1.9-0.9-3.3-2.3-1.4-1.4-2.3-3.2l1.9-1.6q0.2-0.2 0.3-0.4 0-0.2-0.1-0.5l-1.5-3.5q-0.1-0.2-0.3-0.3-0.3-0.2-0.5-0.1z"/></svg>
-                    <b class="rizne">+38(097) 100-25-25</b><br>
-                    <b class="vids rizne">+38(097) 100-25-25</b> 
-                </a>
-            </div>
+                <div class="contaktu flexstart ">  
+                    <a href="tel:+380971002525"> 
+                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" width="17" height="17"><path class="a" d="m1.5 1.5q-0.3 0-0.4 0.2-0.2 0.2-0.2 0.5 0 3.9 2 7.3 1.9 3.3 5.2 5.2 3.4 2 7.4 2 0.2 0 0.5-0.2 0.2-0.1 0.2-0.4l0.8-3.3q0-0.2-0.1-0.5-0.1-0.2-0.4-0.3l-3.5-1.5q-0.2-0.1-0.5 0-0.2 0-0.4 0.2l-1.5 1.9q-1.9-0.9-3.3-2.3-1.4-1.4-2.3-3.2l1.9-1.6q0.2-0.2 0.3-0.4 0-0.2-0.1-0.5l-1.5-3.5q-0.1-0.2-0.3-0.3-0.3-0.2-0.5-0.1z"/></svg>
+                    </a>
+                        <ul>
+                            <li><a class="rizne" href="tel:+380971002525">+38(097) 100-25-25</a><br></li>
+                            <li><a class="  rizne" href="tel:+380971002525">+38(097) 100-25-25</a></li>
+                        </ul>
+                </div>
             <div class="mail">
                 <a href="mailto:hataplus@hata.com.ua"  class="flex rizne">
                     <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13" width="17" height="13"><path class="a" d="m15.4 0.2q0.7 0 1.1 0.5 0.5 0.5 0.5 1.1v9.6q0 0.7-0.5 1.1-0.4 0.5-1.1 0.5h-13.8q-0.7 0-1.1-0.5-0.5-0.4-0.5-1.1v-9.6q0-0.6 0.5-1.1 0.4-0.5 1.1-0.5zm0 1.6h-13.8v1.4q1.1 0.9 4.5 3.5l0.3 0.3q0.6 0.6 1 0.8 0.7 0.4 1.1 0.4 0.4 0 1-0.4 0.4-0.2 1.1-0.8l0.3-0.3q3.3-2.5 4.5-3.5zm-13.8 9.6h13.8v-6.2l-3.9 3q-0.8 0.7-1.3 1-0.9 0.6-1.7 0.6-0.8 0-1.7-0.6-0.5-0.3-1.4-1l-3.8-3z"/></svg>
