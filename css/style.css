@@ -108,10 +108,11 @@ header a  {
      color: #b1b1d2;
 }
 
-.rizne:hover {
-    color: #fd8300;
+.contaktu:hover a {
+  color: #fd8300;
     transition: all 0.6s ease;
 }
+
 
 .forhover:hover a {
     color:#fd8300;
@@ -189,11 +190,15 @@ color: #ffffff;
 }
 
 .prize {
-font-size: 40px;
-line-height: 24px;
-padding-top: 4px;
-color: #fd8300;
-font-weight: bold;
+    font-size: 40px;
+    line-height: 24px;
+    padding-top: 4px;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.prize sup  {
+    font-size: 24px;
 }
 
 .bloku {
