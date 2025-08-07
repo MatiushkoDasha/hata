@@ -102,6 +102,9 @@ header svg {
     fill: #fd8300;
 }
 header a  {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
      color: #b1b1d2;
 }
 
@@ -173,7 +176,7 @@ header a  {
 .section {
     padding-top: 58px;
     padding-bottom: 58px;
-    background: url(../img/Rectangle.webp~) no-repeat center/cover;
+    background: url(../img/Rectangle.webp) no-repeat center/cover;
     width: 100%;
     text-align: center;
 }
