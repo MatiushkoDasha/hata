@@ -32,6 +32,7 @@
     padding: 0;
 }
 body {
+    position:relative;
     font-family: "Arial";
     cursor: url(../img/cursor.cur),default;
 }
@@ -91,7 +92,11 @@ hr {
 }
 
 header {
-padding: 16px 0;
+    position:sticky;
+    top:0;
+    z-index:100;
+    width:100%;
+    padding: 14px 0;
     background-color: #1f1f56;
     align-items: center;
 }
@@ -160,6 +165,10 @@ header a  {
 
 .mail svg {
     padding-right: 1px;
+}
+
+.mail:hover > a {
+    text-decoration:underline;
 }
 .button a {
     padding: 14px 27px ;
@@ -270,6 +279,9 @@ figure sup {
 }
 
 .sidebar  {
+    position:sticky;
+    top:73px;
+    z-index:100;
     align-items: flex-end;
     background-color: #e4e4ec;
       
