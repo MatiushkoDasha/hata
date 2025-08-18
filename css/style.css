@@ -259,6 +259,7 @@ figure sup {
     font-family: "Roboto Slab";
 }
 .nazva  {
+    position: absolute;
     font-size: 14px;
     line-height: 24px;
     color: #1f1f56;
@@ -283,6 +284,7 @@ figcaption a {
     padding-bottom: 50px;
 }
 .cartku p {
+    padding-top: 27px;
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
@@ -295,14 +297,6 @@ figcaption a {
     align-items: flex-end;
     background-color: #e4e4ec;
       
-}
-
-.sidebar  {
-    border-radius: 3px; 
-    overflow: hidden;
-}
-.sidebar li {
-    box-shadow: inset 0px -1px 0px #cecedd;
 }
 
 .orange a {
