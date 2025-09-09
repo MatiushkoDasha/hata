@@ -100,6 +100,7 @@ header {
     background-color: #1f1f56;
     align-items: center;
 }
+
 header svg {
     fill: #fff;
 }
@@ -107,6 +108,7 @@ header svg {
 .he:hover  {
     fill: #fd8300;
 }
+
 header a  {
     font-size: 14px;
     letter-spacing: 2px;
@@ -120,15 +122,82 @@ header a  {
 }
 
 
-.forhover:hover a {
+.header_menu_li:hover a {
     color:#fd8300;
     transition: all 0.6s ease;
 }
  
-.nav {
+
+.radok,.radokvrad {
+    display: none;
+}
+
+.home:hover .radok {
+    display: block;
+}
+
+.budka:hover .radokvrad {
+    display: block;
+}
+
+.radok {
+    position: absolute;
+    top: 55px;
+    border-radius: 3px;
+    background-color: #e4e4ec;
+}
+
+.orang {
+    padding: 3px 25px 3px 9px;
+}
+
+.orang a {
+    position: relative;
+    color: #25252c;
+}
+
+.orang a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -9px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #666666;
+    border-right: 1px solid #666666;
+    transform: translateY(-50%) rotate(45deg);
+    transition: all 0.6s ease;
+}
+.orang:hover {
+    background-color: #fd8300;
+}
+
+.orang:hover a {
+    color: #fff;
+}
+
+.radokvrad {
+    position: absolute;
+    top: 100px;
+    right: -125px;
+    border-radius: 3px;
+}
+
+.lollol {
+    padding: 10px 20px 10px 10px;
+    background-color: #e4e4ec;
+}
+
+.lollol:hover {
+    background-color: #cecedd;
+    transition: all 0.2s ease;
+}
+
+.menu {
     gap: 30px;
 }
-.progu  {
+.list  {
     gap: 26px;
 }
 
@@ -170,6 +239,7 @@ header a  {
 .mail:hover > a {
     text-decoration:underline;
 }
+
 .button a {
     padding: 14px 27px ;
     text-align: center;
@@ -219,12 +289,14 @@ color: #ffffff;
 article {
      padding-bottom: 34px;
 }
+
 article p {
     font-size: 14px;
     line-height: 24px;
     padding-bottom: 14px;
     color: #666666;
 }
+
 .detail  {
     display: inline-block;
     font-size: 14px;
@@ -269,6 +341,7 @@ figure sup {
    text-decoration: underline;
    transition: all 0.6s ease;
 }
+
 figure {
     position: relative;
 }
@@ -279,10 +352,12 @@ figcaption a {
     width: 100%;
     height:100%;
 }
+
 .cartku  {
     gap: 17px;
     padding-bottom: 50px;
 }
+
 .cartku p {
     padding-top: 27px;
     font-size: 13px;
@@ -296,7 +371,6 @@ figcaption a {
     z-index:100;
     align-items: flex-end;
     background-color: #e4e4ec;
-      
 }
 
 .orange a {
@@ -308,7 +382,7 @@ figcaption a {
     color: #25252c;
 }
 
-.orange a::before {
+.orange a:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -351,6 +425,7 @@ li:hover >a:before {
     background-color: #fd8300;
     transition: all 0.6s ease;
 }
+
 .orange:hover> .rad {
     display: block;
 }
@@ -376,6 +451,7 @@ li:hover >a:before {
     font-size: 14px;
     line-height: 29px;
 }
+
 .lol:hover {
     background-color: #cecedd;
     transition: all 0.6s ease;
@@ -410,4 +486,53 @@ footer {
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
+}
+
+.table {
+    padding-bottom: 27px;
+}
+table {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+table, th,td {
+    border: solid 0.5px ;
+    border-collapse: collapse;
+}
+
+thead,th {
+    padding: 8px 33px;
+    color: #fff;
+    border-color: #274569;
+    background-color: #1f1f56;
+}
+
+.namme {
+    text-align: start;
+    padding-left: 20px;
+    padding-right: 100px;
+}
+
+.columone {
+    padding-left: 20px;
+}
+
+.sell {
+  padding-right: 20px;
+}
+
+tbody,td  {
+    padding: 11px 20px;
+    text-align: center;
+    border-color: #cecedd;
+    color: #666666;
+    background-color: #e4e4ec;
+}
+
+
+ tr:hover  td{
+    color: #fff;
+    background-color: #fd8300;
+    transition: all 0.6s ease;
 }
