@@ -104,6 +104,7 @@ header svg {
     fill: #fff;
 }
 
+
 .he:hover  {
     fill: #fd8300;
 }
@@ -112,12 +113,16 @@ header li {
     padding: 14px 0;
 }
 
+header a:hover {
+  color: #fd8300;
+}
+
 .home::before {
     content: '';
     position: absolute;
-    top: 10px;
+    top: 52px;
     width: 110px;
-    height: 60px;
+    height: 20px;
 }
 
 header a  {
@@ -127,8 +132,8 @@ header a  {
      color: #b1b1d2;
 }
 
-.contaktu:hover a {
-  color: #fd8300;
+.buttonn:hover a {
+    color: #fd8300;
     transition: all 0.6s ease;
 }
 
@@ -141,6 +146,10 @@ header a  {
 
 .radok,.radokvrad {
     display: none;
+}
+
+.now {
+    color: #fd8300;
 }
 
 .home:hover .radok {
@@ -192,7 +201,9 @@ header a  {
     z-index: 4;
 }
 
+
 .orang:hover {
+    border-radius: 3px;
     background-color: #fd8300;
 }
 
@@ -221,6 +232,7 @@ header a  {
 .menu {
     gap: 30px;
 }
+
 .list  {
     gap: 26px;
 }
@@ -231,8 +243,10 @@ header a  {
 }
 
 .head {
+    position: relative;
     padding-top: 29px;
     padding-bottom: 29px;
+    z-index: 3;
     
 }
 
@@ -270,7 +284,7 @@ header a  {
     padding-right: 1px;
 }
 
-.mail:hover > a {
+.underline:hover  {
     text-decoration:underline;
 }
 
@@ -297,10 +311,9 @@ header a  {
 }
 
 section p {
-font-size: 14px;
-line-height: 24px;
-color: #ffffff;
-
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
 }
 
 .prize {
@@ -371,7 +384,7 @@ figure sup {
     color: #1f1f56;
 }
 
-.nazva:hover  {
+.parent:hover>.nazva  {
    text-decoration: underline;
    transition: all 0.6s ease;
 }
@@ -522,10 +535,10 @@ footer {
     color: #9999a6;
 }
 
-.table {
-    padding-bottom: 27px;
-}
+
 table {
+    padding-bottom: 27px;
+    width: 100%;
     border-radius: 3px;
     overflow: hidden;
 }
