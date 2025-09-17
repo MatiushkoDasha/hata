@@ -40,6 +40,7 @@ body {
 nav {
     display: block;
 }
+
 ul {
     margin: 0;
     padding: 0;
@@ -47,8 +48,9 @@ ul {
 }
 
 a {
-    cursor: url(../img/tik.cur),default;
+    display: block;
     text-decoration: none;
+    cursor: url(../img/tik.cur),default;
 }
 
 .parent:hover{
