@@ -37,6 +37,9 @@ body {
     cursor: url(../img/cursor.cur),default;
 }
 
+nav {
+    display: block;
+}
 ul {
     margin: 0;
     padding: 0;
@@ -47,6 +50,12 @@ a {
     cursor: url(../img/tik.cur),default;
     text-decoration: none;
 }
+
+.parent:hover{
+    text-decoration: underline;
+   transition: all 0.6s ease;
+}
+
 svg {
     fill: #fd8300;
 }
@@ -246,8 +255,7 @@ header a  {
     position: relative;
     padding-top: 29px;
     padding-bottom: 29px;
-    z-index: 3;
-    
+    z-index: 3; 
 }
 
 .head a  {
@@ -302,6 +310,13 @@ header a  {
     transition: all 0.6s ease;
 }
 
+.contacts h2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+}
+
 .section {
     padding-top: 58px;
     padding-bottom: 58px;
@@ -335,17 +350,22 @@ section p {
 
 article {
      padding-bottom: 34px;
+     align-items: flex-start;
+}
+
+article li {
+    padding-top: 5px;
 }
 
 article p {
     font-size: 14px;
     line-height: 24px;
-    padding-bottom: 14px;
     color: #666666;
 }
 
 .detail  {
     display: inline-block;
+    padding-top: 24px;
     font-size: 14px;
     line-height: 24px;
     text-decoration: underline;
@@ -382,6 +402,11 @@ figure sup {
     font-size: 14px;
     line-height: 24px;
     color: #1f1f56;
+}
+
+.nazva:hover {
+   text-decoration: underline;
+   transition: all 0.6s ease;
 }
 
 .parent:hover>.nazva  {
@@ -535,9 +560,12 @@ footer {
     color: #9999a6;
 }
 
+.table {
+    padding: 27px 0;
+}
 
 table {
-    padding-bottom: 27px;
+    padding: 27px 0;
     width: 100%;
     border-radius: 3px;
     overflow: hidden;
@@ -582,4 +610,12 @@ tbody,td  {
     color: #fff;
     background-color: #fd8300;
     transition: all 0.6s ease;
+}
+
+.category {
+    font-size: 14px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
 }
