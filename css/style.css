@@ -100,6 +100,16 @@ hr {
     justify-content: space-between;
 }
 
+.border_top {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.border_bottom {
+    border-bottom-left-radius: 3px ;
+    border-bottom-right-radius: 3px;
+}
+
 header {
     position:sticky;
     top:0;
@@ -157,10 +167,6 @@ header a  {
     display: none;
 }
 
-.now {
-    color: #fd8300;
-}
-
 .home:hover .radok {
     display: block;
 }
@@ -172,13 +178,12 @@ header a  {
 .radok {
     position: absolute;
     top: 60px;
-    border-radius: 3px;
-    background-color: #e4e4ec;
     z-index: 3;
 }
 
 .orang {
     padding: 3px 25px 3px 9px;
+    background-color: #e4e4ec;
 }
 
 .orang a {
@@ -212,7 +217,6 @@ header a  {
 
 
 .orang:hover {
-    border-radius: 3px;
     background-color: #fd8300;
 }
 
@@ -423,6 +427,11 @@ figcaption a {
     display: block;
     width: 100%;
     height:100%;
+    z-index: 1;
+}
+
+figcaption a:hover~.nazva {
+    text-decoration: underline;
 }
 
 .cartku  {
@@ -439,16 +448,17 @@ figcaption a {
 
 .sidebar  {
     position:sticky;
+    border-radius: 2=10px;
     top:73px;
     z-index:100;
     align-items: flex-end;
-    background-color: #e4e4ec;
 }
 
 .orange a {
     position: relative;
     display: block;
     padding: 10px 15px;
+    background-color: #e4e4ec;
     font-size: 14px;
     line-height: 24px;
     color: #25252c;
@@ -479,6 +489,8 @@ li:hover >a:before {
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 51px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     font-size: 14px;
     line-height: 29px;
     background-color: #1f1f56;
@@ -565,7 +577,6 @@ footer {
 }
 
 table {
-    padding: 27px 0;
     width: 100%;
     border-radius: 3px;
     overflow: hidden;
@@ -577,7 +588,7 @@ table, th,td {
 }
 
 thead,th {
-    padding: 8px 33px;
+    padding: 8px 20px;
     color: #fff;
     border-color: #274569;
     background-color: #1f1f56;
@@ -594,7 +605,8 @@ thead,th {
 }
 
 .sell {
-  padding-right: 20px;
+    text-align: end;
+    
 }
 
 tbody,td  {
@@ -604,7 +616,6 @@ tbody,td  {
     color: #666666;
     background-color: #e4e4ec;
 }
-
 
  tr:hover  td{
     color: #fff;
