@@ -48,7 +48,6 @@ ul {
 }
 
 a {
-    display: block;
     text-decoration: none;
     cursor: url(../img/tik.cur),default;
 }
@@ -79,6 +78,7 @@ hr {
     border-top: none;
     width: 100%;
 }
+
 .flex {
     display: flex;
     align-items: center;
@@ -183,6 +183,9 @@ header a  {
     z-index: 3;
 }
 
+.radok a {
+    display: block;
+}
 .orang {
     padding: 3px 25px 3px 9px;
     background-color: #e4e4ec;
