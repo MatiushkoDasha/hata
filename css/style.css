@@ -637,13 +637,15 @@ tbody,td  {
 }
 
 .comunicate {
+    align-items: flex-start;
     padding-top: 36px;
+    gap: 28px;
 }
 
 .map {
     position: relative;
     min-height: 371px;
-    max-width: 466px;
+    min-width: 466px;
     overflow: hidden;
 }
 
@@ -655,4 +657,81 @@ iframe {
     height: 100%;
     min-height: 371px;
     border: none;
+}
+
+.forms h3{
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 22px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+input {
+    padding: 11px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
+}
+
+.input1,.input2 {
+    min-width: 204px;
+}
+
+.input3 {
+    grid-column: span 2;
+}
+
+.input4 {
+    height: 71px;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.inputbutton input {
+    width: 140px;
+    height: 41px;
+    border: none;
+    border-radius: 21px;
+    color: #ffffff;
+    background-color: #fd8300;
+}
+
+.buttonscheck {
+    padding-top: 13px;
+    align-items: center;
+    gap: 30px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.check {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4
+}
+
+input:checked {
+    border: 1px;
+    background-color: red;
+}
+
+.forms p {
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
 }
