@@ -391,6 +391,7 @@ figure sup {
 }
 
 .zagolovok  {
+    padding-top: 41px;
     padding-bottom: 27px;
     font-size: 30px;
     color: #24242b;
@@ -676,25 +677,21 @@ iframe {
 }
 
 input {
+    width: 100%;
     padding: 11px;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #c5c5d4;
 }
 
-.input1,.input2 {
-    min-width: 204px;
+.input1 {
+    max-width: 208px;
 }
 
 .input3 {
     grid-column: span 2;
 }
 
-.input4 {
-    height: 71px;
-    grid-column: span 2;
-    grid-row: span 2;
-}
 
 .inputbutton input {
     width: 140px;
@@ -705,16 +702,21 @@ input {
     background-color: #fd8300;
 }
 
-.buttonscheck {
-    padding-top: 13px;
-    align-items: center;
-    gap: 30px;
+textarea {
+    resize: none;
+    padding: 11px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
 }
 
-label {
-    display: flex;
+.buttonscheck {
+    width: 15px;
+    height: 15px;
+    padding-top: 13px;
     align-items: center;
-    gap: 3px;
+    box-sizing: border-box;
+    gap: 30px;
 }
 
 .check {
@@ -726,7 +728,9 @@ label {
 }
 
 input:checked {
-    border: 1px;
+    appearance: none;
+    width: 15px;
+    height: 15px;
     background-color: red;
 }
 
