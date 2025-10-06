@@ -27,6 +27,11 @@
     font-style: normal;
     font-display: swap;
 }
+
+html {
+    font-size: 1px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -63,10 +68,10 @@ svg {
 
 h1 {
     display: block;
-    font-size: 30px;
-    padding-bottom: 5px;
-    letter-spacing: 2px;
-    line-height: 24px;
+    font-size: 30rem;
+    padding-bottom: 5rem;
+    letter-spacing: 2rem;
+    line-height: 24rem;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
@@ -82,7 +87,7 @@ hr {
 .flex {
     display: flex;
     align-items: center;
-    gap: 11px;
+    gap: 11rem;
 }
 
 .flex_betwen {
@@ -94,7 +99,7 @@ hr {
 .flexstart {
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: 10rem;
 }
 
 .flex_between {
@@ -103,13 +108,13 @@ hr {
 }
 
 .border_top {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
 }
 
 .border_bottom {
-    border-bottom-left-radius: 3px ;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3rem ;
+    border-bottom-right-radius: 3rem;
 }
 
 header {
@@ -121,6 +126,10 @@ header {
     align-items: center;
 }
 
+ .navigaption {
+    display: none;
+}
+
 header svg {
     fill: #fff;
 }
@@ -130,7 +139,7 @@ header svg {
 }
 
 header li {
-    padding: 14px 0;
+    padding: 14rem 0;
 }
 
 header a:hover {
@@ -140,15 +149,19 @@ header a:hover {
 .home::before {
     content: '';
     position: absolute;
-    top: 52px;
-    width: 110px;
-    height: 20px;
+    top: 52rem;
+    width: 110rem;
+    height: 20rem;
+}
+
+.contacts {
+    flex-direction: row;
 }
 
 header a  {
-    font-size: 14px;
-    letter-spacing: 2px;
-    line-height: 24px;
+    font-size: 14rem;
+    letter-spacing: 2rem;
+    line-height: 24rem;
      color: #b1b1d2;
 }
 
@@ -164,6 +177,10 @@ header a  {
 }
  
 
+.main {
+    flex-direction: column;
+}
+
 .radok,.radokvrad {
     display: none;
 }
@@ -178,7 +195,7 @@ header a  {
 
 .radok {
     position: absolute;
-    top: 60px;
+    top: 60rem;
     z-index: 3;
 }
 
@@ -186,7 +203,7 @@ header a  {
     display: block;
 }
 .orang {
-    padding: 3px 25px 3px 9px;
+    padding: 3rem 25rem 3rem 9rem;
     background-color: #e4e4ec;
     transition: all 0.6s ease;
 }
@@ -200,12 +217,12 @@ header a  {
     content: '';
     position: absolute;
     top: 50%;
-    right: -9px;
+    right: -9rem;
     display: block;
-    width: 6px;
-    height: 6px;
-    border-top: 1px solid #666666;
-    border-right: 1px solid #666666;
+    width: 6rem;
+    height: 6rem;
+    border-top: 1rem solid #666666;
+    border-right: 1rem solid #666666;
     transform: translateY(-50%) rotate(45deg);
     transition: all 0.6s ease;
 }
@@ -214,9 +231,9 @@ header a  {
     content: '';
     position: absolute;
     top: 0;
-    right: 100px;
-    width: 40px;
-    height: 30px;
+    right: 100rem;
+    width: 40rem;
+    height: 30rem;
     z-index: 4;
 }
 
@@ -231,21 +248,21 @@ header a  {
 
 .radokvrad {
     position: absolute;
-    top: 93px;
-    right: -130px;
-    border-radius: 3px;
+    top: 93rem;
+    right: -130rem;
+    border-radius: 3rem;
     z-index: 3;
 }
 
 .lollol {
-    padding: 2px 20px 2px 10px;
+    padding: 2rem 20rem 2rem 10rem;
     background-color: #e4e4ec;
 }
 
 .lollol p {
-    font-size: 12px;
-    letter-spacing: 2px;
-    line-height: 24px;
+    font-size: 12rem;
+    letter-spacing: 2rem;
+    line-height: 24rem;
     color: #25252c;
 }
 
@@ -261,24 +278,26 @@ header a  {
 }
 
 .menu {
-    gap: 30px;
+    gap: 30rem;
 }
 
 .list  {
-    gap: 26px;
+    gap: 26rem;
 }
 
 .wrapper {
      margin: 0 auto;
-     max-width: 960px;
+     padding: 9rem ;
+     max-width: 960rem;
 }
 
 .head {
     position: relative;
-    padding-top: 29px;
-    padding-bottom: 29px;
+    flex-direction: column;
+    padding-top: 29rem;
+    padding-bottom: 29rem;
     z-index: 3; 
-    
+    gap: 25rem  ;
 }
 
 .head a  {
@@ -287,16 +306,16 @@ header a  {
 
 .box {
     position: absolute;
-    top: 55px;
+    top: 55rem;
     width: 100%;
-    height: 114px;
-    box-shadow:0 0 5px 0px rgba(0,0,0,0.1);
+    height: 114rem;
+    box-shadow:0 0 5rem 0rem rgba(0,0,0,0.1);
     z-index: 4;
 }
 
 .contaktu a {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 18rem;
+    line-height: 24rem;
     color: #25252c;
     font-weight: bold;
 }
@@ -307,25 +326,32 @@ header a  {
 }
 
 .mail a {
-    line-height: 25px;
+    font-size: 16rem;
+    line-height: 25rem;
      color: #25252c;
 }
 
 .mail svg {
-    padding-right: 1px;
+    padding-right: 1rem;
 }
 
 .underline:hover  {
     text-decoration:underline;
 }
 
+.button {
+    width: 100%;
+}
+
 .button a {
-    padding: 14px 27px ;
-    text-align: center;
     display: inline-block;
+    width: 80%;
+    font-size: 16rem;
+    padding: 14rem 27rem ;
+    text-align: center;
     color: #25252c;
-    border-radius: 25px;
-    border: 2px solid #fd8300;
+    border-radius: 25rem;
+    border: 2rem solid #fd8300;
 }
 
 .button:hover a{
@@ -334,68 +360,69 @@ header a  {
 }
 
 .contacts h2 {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
 }
 
 .section {
-    padding-top: 58px;
-    padding-bottom: 58px;
+    padding-top: 58rem;
+    padding-bottom: 58rem;
     background: url(../img/Rectangle.webp) no-repeat center/cover;
     width: 100%;
     text-align: center;
 }
 
 section p {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #ffffff;
 }
 
 .prize {
-    font-size: 40px;
-    line-height: 24px;
-    padding-top: 4px;
+    font-size: 40rem;
+    line-height: 24rem;
+    padding-top: 4rem;
     color: #fd8300;
     font-weight: bold;
 }
 
 .prize sup  {
-    font-size: 18px;
+    font-size: 18rem;
 }
 
 .bloku {
+    flex-direction: column;
     align-items: flex-start;
-    padding-top:31px ;
+    padding-top:31rem ;
 }
 
 article {
-    padding-bottom: 34px;
+    padding-bottom: 34rem;
 }
 
 .article_contact {
     display: flex;
     align-items: flex-start;
-    gap: 100px;
+    gap: 100rem;
 }
 
 article li {
-    padding-top: 5px;
+    padding-top: 5rem;
 }
 
 article p {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #666666;
 }
 
 .detail  {
     display: inline-block;
-    padding-top: 24px;
-    font-size: 14px;
-    line-height: 24px;
+    padding-top: 24rem;
+    font-size: 14rem;
+    line-height: 24rem;
     text-decoration: underline;
     color: #fd8300;
 }
@@ -406,30 +433,30 @@ article p {
 }
 
 figure sup {
-    font-size: 7px;
+    font-size: 7rem;
 }
 
 .zagolovok  {
-    padding-top: 20px;
-    padding-bottom: 27px;
-    font-size: 30px;
+    padding-top: 20rem;
+    padding-bottom: 27rem;
+    font-size: 30rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 
 .usproject {
-    padding: 31px 0 26px ;
-    font-size: 24px;
-    line-height: 24px;
+    padding: 31rem 0 26rem ;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 .nazva  {
     position: absolute;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #1f1f56;
 }
 
@@ -460,21 +487,23 @@ figcaption a:hover~.nazva {
 }
 
 .cartku  {
-    gap: 17px;
-    padding-bottom: 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 50rem;
+    gap: 17rem;
 }
 
 .cartku p {
-    padding-top: 27px;
-    font-size: 13px;
-    line-height: 18px;
+    padding-top: 27rem;
+    font-size: 13rem;
+    line-height: 18rem;
     color: #9999a6;
 }
 
 .sidebar  {
     position:sticky;
-    border-radius: 2=10px;
-    top:73px;
+    border-radius: 2=10rem;
+    top:73rem;
     z-index:100;
     align-items: flex-end;
 }
@@ -482,10 +511,10 @@ figcaption a:hover~.nazva {
 .orange a {
     position: relative;
     display: block;
-    padding: 10px 15px;
+    padding: 10rem 15rem;
     background-color: #e4e4ec;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #25252c;
 }
 
@@ -493,12 +522,12 @@ figcaption a:hover~.nazva {
     content: '';
     position: absolute;
     top: 50%;
-    right: 14px;
+    right: 14rem;
     display: block;
-    width: 6px;
-    height: 6px;
-    border-top: 1px solid #666666;
-    border-right: 1px solid #666666;
+    width: 6rem;
+    height: 6rem;
+    border-top: 1rem solid #666666;
+    border-right: 1rem solid #666666;
     transform: translateY(-50%) rotate(45deg);
     transition: all 0.6s ease;
 }
@@ -510,20 +539,20 @@ li:hover >a:before {
 
 .headsidebar  {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 51px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    font-size: 14px;
-    line-height: 29px;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 15rem;
+    padding-right: 51rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    font-size: 14rem;
+    line-height: 29rem;
     background-color: #1f1f56;
     }
 
 .headsidebar p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16rem;
+    line-height: 24rem;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -551,14 +580,14 @@ li:hover >a:before {
 }
 
 [href="border"]{
-     border-top:1px solid #cecedd;
+     border-top:1rem solid #cecedd;
 }
 
 .lol {
     display: block;
-    padding: 8px 27px;
-    font-size: 14px;
-    line-height: 29px;
+    padding: 8rem 27rem;
+    font-size: 14rem;
+    line-height: 29rem;
 }
 
 .lol:hover {
@@ -568,14 +597,20 @@ li:hover >a:before {
 
 .mainfooter {
     align-items: flex-start;
-    padding-top: 41px;
-    padding-bottom: 30px;
+    padding-top: 41rem;
+    padding-bottom: 30rem;
     background-color: #ededf5;
 }
 
+.flex_wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 30rem;
+}
+
 .info li a {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 14rem;
+    line-height: 26rem;
     color: #666666;
 }
 
@@ -586,34 +621,34 @@ li:hover >a:before {
 }
 
 footer {
-    padding: 13px ;
+    padding: 13rem ;
     background-color: #dcdce6;
     text-align: center;
 }
 
 footer {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 13rem;
+    line-height: 18rem;
     color: #9999a6;
 }
 
 .table {
-    padding: 27px 0;
+    padding: 27rem 0;
 }
 
 table {
     width: 100%;
-    border-radius: 3px;
+    border-radius: 3rem;
     overflow: hidden;
 }
 
 table, th,td {
-    border: solid 0.5px ;
+    border: solid 0.5rem ;
     border-collapse: collapse;
 }
 
 thead,th {
-    padding: 8px 20px;
+    padding: 8rem 20rem;
     color: #fff;
     border-color: #274569;
     background-color: #1f1f56;
@@ -621,12 +656,12 @@ thead,th {
 
 .namme {
     text-align: start;
-    padding-left: 20px;
-    padding-right: 100px;
+    padding-left: 20rem;
+    padding-right: 100rem;
 }
 
 .columone {
-    padding-left: 20px;
+    padding-left: 20rem;
 }
 
 .sell {
@@ -635,7 +670,7 @@ thead,th {
 }
 
 tbody,td  {
-    padding: 11px 20px;
+    padding: 11rem 20rem;
     text-align: center;
     border-color: #cecedd;
     color: #666666;
@@ -649,8 +684,8 @@ tbody,td  {
 }
 
 .category {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -658,78 +693,77 @@ tbody,td  {
 
 .comunicate {
     align-items: flex-start;
-    padding-top: 36px;
-    gap: 28px;
+    padding-top: 36rem;
+    gap: 28rem;
 }
 
 .map {
     position: relative;
-    min-height: 371px;
-    min-width: 466px;
+    min-height: 371rem;
+    min-width: 466rem;
     overflow: hidden;
 }
 
 iframe {
     position: absolute;
-    top: -72px;
+    top: -72rem;
     left: 0;
     width: 100%;
     height: 100%;
-    min-height: 371px;
+    min-height: 371rem;
     border: none;
 }
 
 .forms h3{
-    font-size: 14px;
-    line-height: 24px;
-    padding-bottom: 15px;
+    font-size: 14rem;
+    line-height: 24rem;
+    padding-bottom: 15rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 
 .inputs {
-    min-height: 221px;
+    min-height: 221rem;
     box-sizing: content-box;
 }
 
 input {
     width: 100%;
-    padding: 11px;
-    border-radius: 3px;
+    padding: 11rem;
+    border-radius: 3rem;
     background-color: #ffffff;
     box-sizing: border-box;
-    border: 1px solid #c5c5d4;
+    border: 1rem solid #c5c5d4;
 }
 
 .input1 , .input2 {
-    width: 228px;
-    padding-bottom: 10px;
+    width: 228rem;
+    padding-bottom: 10rem;
 }
 
 .input3  {
-    padding-bottom: 10px;
+    padding-bottom: 10rem;
 }
 
 .input4 {
     display: block;
-    max-width: 442px;
-    height: 81px;
+    max-width: 442rem;
+    height: 81rem;
     box-sizing: border-box;
 }
 
 .inputbutton input {
-    width: 140px;
-    height: 41px;
+    width: 140rem;
+    height: 41rem;
     border: none;
-    border-radius: 21px;
+    border-radius: 21rem;
     color: #ffffff;
     background-color: #fd8300;
     cursor: url(../img/tik.cur),default;
 }
 
 .inputbutton input:hover{
-    
     background-color: #4a00c0;
 }
 
@@ -738,15 +772,15 @@ textarea {
     resize: vertical;
     width: 100%;
     height: 100%;
-    padding: 11px;
-    border-radius: 3px;
+    padding: 11rem;
+    border-radius: 3rem;
     background-color: #ffffff;
-    border: 1px solid #c5c5d4;
+    border: 1rem solid #c5c5d4;
 }
 
 .buttonscheck {
     align-items: center;
-    gap: 30px;
+    gap: 30rem;
 }
 
 .real {
@@ -756,11 +790,11 @@ textarea {
 .custom {
     position: relative;
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 3px;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 3rem;
     background-color: #ffffff;
-    border: 1px solid #c5c5d4;
+    border: 1rem solid #c5c5d4;
 }
 
 .custom::before{
@@ -768,8 +802,8 @@ textarea {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 15px;
-    height: 15px;
+    width: 15rem;
+    height: 15rem;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(0);
@@ -780,8 +814,78 @@ textarea {
 .real:checked + .custom::before {
     transform: translate(-50%, -50%) scale(1);
 }
+
 .forms p {
-    font-size: 13px;
-    line-height: 21px;
+    font-size: 13rem;
+    line-height: 21rem;
     color: #666666;
+}
+
+@media screen  and (min-width: 480px){
+    
+    .flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 11rem;
+}
+
+}
+
+@media screen  and (min-width: 550px){
+
+    .head {
+        flex-wrap: wrap;
+            flex-direction: row;
+    }
+
+    .button  {
+        width: 200rem;
+    }
+    .flex_wrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:center;
+        gap: 0;
+    }
+}
+
+@media screen  and (min-width: 768px){
+    html {
+        font-size: .9px;
+    }
+    
+    .navigaption {
+        display: block;
+    }
+
+    .bloku {
+        flex-direction: row;
+    }
+
+}
+
+@media screen  and (min-width: 1024px){
+    html {
+        font-size: 1px;
+    }
+
+}
+
+@media screen  and (min-width: 1400px){
+    html {
+        font-size: 1.1px;
+    }
+}
+
+@media screen  and (min-width: 1920px){
+    html {
+        font-size: 1.5px;
+    }
+}
+
+@media screen  and (min-width: 2200px){
+    html {
+        font-size: 1.7px;
+    }
 }
