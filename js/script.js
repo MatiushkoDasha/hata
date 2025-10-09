@@ -7,3 +7,8 @@ darck.onclick =  () => {
     popup.style.display ="none"
     darck.style.display ="none"
 }
+
+canel.onclick =  () => {
+    popup.style.display ="none"
+    darck.style.display ="none"
+}
