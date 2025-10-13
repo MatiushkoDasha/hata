@@ -120,14 +120,23 @@ hr {
 header {
     position:sticky;
     top:0;
-    z-index:100;
     width:100%;
-    background-color: #1f1f56;
     align-items: center;
+    background-color: #1f1f56;
+    z-index:5;
 }
 
- .navigaption {
+.navigaption {
     display: none;
+}
+ .navigaption {
+    position: fixed;
+    top: 20rem;
+    right: 0;
+    width: 50%;
+    height: 1000%;
+    padding-left: 15rem;
+    background-color: #1f1f56;
 }
 
 header svg {
@@ -139,7 +148,7 @@ header svg {
 }
 
 header li {
-    padding: 14rem 0;
+    padding: 8rem 0;
 }
 
 header a:hover {
@@ -163,6 +172,7 @@ header a  {
     letter-spacing: 2rem;
     line-height: 24rem;
      color: #b1b1d2;
+     z-index: 6;
 }
 
 .buttonn:hover a {
@@ -278,7 +288,10 @@ header a  {
 }
 
 .menu {
-    gap: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20rem;
 }
 
 .list  {
@@ -473,6 +486,7 @@ article li {
 
 article p {
     font-size: 14rem;
+    margin-bottom: 20rem;
     line-height: 24rem;
     color: #666666;
 }
@@ -549,7 +563,7 @@ figcaption a:hover~.nazva {
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 50rem;
-    gap: 17rem;
+    gap: 23rem;
 }
 
 .cartku p {
@@ -602,7 +616,7 @@ li:hover >a:before {
     padding-top: 10rem;
     padding-bottom: 10rem;
     padding-left: 15rem;
-    padding-right: 51rem;
+    padding-right: 5rem;
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
     font-size: 14rem;
@@ -628,6 +642,11 @@ li:hover >a:before {
     display: block;
 }
 
+.info1 li a {
+   font-size: 14rem;
+    line-height: 26rem;
+    color: #666666;
+}
 .rad {
     display: none;
 }
@@ -668,7 +687,7 @@ li:hover >a:before {
     gap: 30rem;
 }
 
-.info li a {
+ .info li a {
     font-size: 14rem;
     line-height: 26rem;
     color: #666666;
@@ -886,13 +905,7 @@ textarea {
 }
 
 @media screen  and (min-width: 480px){
-    
-    .flex {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 11rem;
-}
+
 
 }
 
@@ -900,17 +913,22 @@ textarea {
 
     .head {
         flex-wrap: wrap;
-            flex-direction: row;
+        flex-direction: row;
     }
 
     .button  {
         width: 200rem;
     }
+
     .flex_wrap {
         flex-direction: row;
         flex-wrap: wrap;
         align-items:center;
-        gap: 0;
+        gap: 20;
+    }
+
+    .head {
+        justify-content: center;
     }
 }
 
@@ -919,10 +937,26 @@ textarea {
         font-size: .9px;
     }
     
-    .navigaption {
+  .navigaption {
         display: block;
-    }
-    
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 1000%;
+        padding-left: 0;
+        background-color: #1f1f56;
+}
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10rem;
+}
+.burger {
+    display: none;
+}
+
     .bloku {
         flex-direction: row;
     }
@@ -932,11 +966,25 @@ textarea {
     }
 }
 
+@media screen  and (min-width: 834px){
+    html {
+        font-size: .9px;
+    }
+
+    .head {
+        justify-content: space-between;
+        
+    }
+}
+
 @media screen  and (min-width: 1024px){
     html {
         font-size: 1px;
     }
 
+    .cartku {
+        justify-content: flex-start;
+    }
 }
 
 @media screen  and (min-width: 1400px){
