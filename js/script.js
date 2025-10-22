@@ -18,3 +18,8 @@ burger.onclick =  () => {
     navigaption.style.display ="block"
     darck.style.display ="block"
 }
+
+burgercanel.onclick =  () => {
+    navigaption.style.display ="none"
+    darck.style.display ="none"
+}

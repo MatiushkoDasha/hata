@@ -129,6 +129,7 @@ header {
 .navigaption {
     display: none;
 }
+
  .navigaption {
     position: fixed;
     top: 20rem;
@@ -155,12 +156,20 @@ header a:hover {
   color: #fd8300;
 }
 
-.home::before {
+.navigaption::before {
     content: '';
+    position: relative;
+    display: block;
+    top: 170rem;
+    left: 1rem;
+    width: 100%;
+    height: 30rem;
+}
+
+.burgercanel {
     position: absolute;
-    top: 52rem;
-    width: 110rem;
-    height: 20rem;
+    top: 0;
+    right: 20rem;
 }
 
 .contacts {
@@ -195,8 +204,12 @@ header a  {
     display: none;
 }
 
-.home:hover .radok {
+.navigaption:hover .radok {
     display: block;
+    position: static;
+    top: 10rem;
+    margin-top: 10rem;
+
 }
 
 .budka:hover .radokvrad {
@@ -205,6 +218,7 @@ header a  {
 
 .radok {
     position: absolute;
+    width: 165%;
     top: 60rem;
     z-index: 3;
 }
@@ -257,7 +271,7 @@ header a  {
 }
 
 .radokvrad {
-    position: absolute;
+    position: static;
     top: 93rem;
     right: -130rem;
     border-radius: 3rem;
@@ -405,7 +419,7 @@ header a  {
     z-index: 4;
 }
 
-#popup h2{
+#popup h2 {
     font-size: 24rem;
     line-height: 24rem;
     padding-bottom: 19rem;
@@ -420,7 +434,7 @@ header a  {
     margin-bottom: 10rem;
 }
 
-#popup a {
+#popup button {
     display: inline-block;
     width: 100%;
     font-size: 16rem;
@@ -428,6 +442,7 @@ header a  {
     text-align: center;
     color: #fff;
     background-color: #fd8300;
+    border: none;
     border-radius: 22px;
     box-sizing: border-box;
 }
@@ -465,7 +480,7 @@ section p {
 }
 
 .bloku {
-    flex-direction: column;
+    flex-wrap: wrap-reverse;
     align-items: flex-start;
     padding-top:31rem ;
 }
@@ -574,7 +589,7 @@ figcaption a:hover~.nazva {
 }
 
 .sidebar  {
-    position:sticky;
+    position:static;
     width: 100%;
     border-radius: 2rem;
     top:73rem;
@@ -937,24 +952,9 @@ textarea {
         font-size: .9px;
     }
     
-  .navigaption {
-        display: block;
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 1000%;
-        padding-left: 0;
-        background-color: #1f1f56;
-}
-    .menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10rem;
-}
-.burger {
-    display: none;
+
+.bloku {
+    flex-wrap: nowrap;
 }
 
     .bloku {
@@ -962,6 +962,7 @@ textarea {
     }
     
     .sidebar{
+        position: sticky;
         width: 219px;
     }
 }
@@ -981,7 +982,68 @@ textarea {
     html {
         font-size: 1px;
     }
+    .burgercanel {
+        display: none;
+    }
 
+    .navigaption::before {
+        content: '';
+        position: absolute;
+        top: 40rem;
+        left: 40%;
+        width: 30%;
+        height: 30rem;
+}
+
+.navigaption:hover .radok  {
+    position: absolute;
+    top: 45rem;
+}
+     .navigaption {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 1000%;
+        padding-left: 0;
+        background-color: #1f1f56;
+}
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10rem;
+}
+
+.burgercanel svg {
+    position: absolute;
+    top: -10rem;
+    right: 20rem;
+}
+.navigaption::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 40rem;
+    left: 40%;
+    width: 30%;
+    height: 30rem;
+
+}
+.burger, .darck {
+    display: none;
+}
+.radok {
+    width: 155rem;
+}
+.radokvrad {
+    position: absolute;
+    top: 93rem;
+    right: -130rem;
+    border-radius: 3rem;
+    z-index: 3;
+}
     .cartku {
         justify-content: flex-start;
     }
