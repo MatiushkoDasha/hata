@@ -23,7 +23,7 @@ if ($_POST) {
     $tema = urlencode("$tema");
     $textarea = urlencode("$textarea");
     $urlQuery = "https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=" .
-    "helo4o" . "%0A%0A" .
+    "Новий грішник" . "%0A%0A" .
     "Name : <b> " . $textmasage . "</b>%0A" .
     "Number : <b> " . $tell . "</b>%0A" .
     "Tema : <b> " . $tema . "</b>%0A"  .

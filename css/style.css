@@ -142,8 +142,14 @@ header {
 
 header svg {
     fill: #fff;
+    width: 20rem;
+    height: 19rem;
 }
 
+.burger svg {
+    width: 40rem;
+    height: 40rem;
+}
 .he:hover  {
     fill: #fd8300;
 }
@@ -162,7 +168,7 @@ header a:hover {
     display: block;
     top: 170rem;
     left: 1rem;
-    width: 100%;
+    width: 30%;
     height: 30rem;
 }
 
@@ -198,6 +204,11 @@ header a  {
 
 .main {
     flex-direction: column;
+}
+
+.logotup img {
+    width: 220rem;
+    height: 57rem;
 }
 
 .radok,.radokvrad {
@@ -333,10 +344,10 @@ header a  {
 
 .box {
     position: absolute;
-    top: 195rem;
+    top: 0;
+    height: 405rem;
     width: 100%;
-    height: .6rem;
-    box-shadow:0 0 5rem 0rem rgba(0,0,0,0.1);
+    box-shadow:0 0 5rem 0rem rgba(0,0,0,0.3);
     z-index: 2;
 }
 
@@ -450,6 +461,8 @@ header a  {
     position: absolute;
     left: 90%;
     top: 10%;
+    width: 40rem;
+    height: 40rem;
     fill: #a5a7a8;
     cursor: url(../img/tik.cur),default;
 }
@@ -534,6 +547,7 @@ figure sup {
 }
 
 .usproject {
+    text-align: center;
     padding: 31rem 0 26rem ;
     font-size: 24rem;
     line-height: 24rem;
@@ -574,6 +588,10 @@ figcaption a:hover~.nazva {
     text-decoration: underline;
 }
 
+.project img {
+    width: 219rem;
+    height: 150rem;
+}
 .cartku  {
     flex-wrap: wrap;
     justify-content: center;
@@ -729,8 +747,6 @@ footer {
 .table {
     padding: 27rem 0;
     overflow-x: auto;
-    overflow-y: auto;
-    max-height: 300rem;
 }
 
 table {
@@ -949,7 +965,7 @@ textarea {
     .flex_wrap {
         flex-direction: row;
         flex-wrap: wrap;
-        align-items:center;
+        align-items:flex-start;
         gap: 20;
     }
 
@@ -964,6 +980,10 @@ textarea {
 
     .head {
         justify-content: center;
+    }
+
+    .box {
+        height: 261rem;
     }
 
     .map {
@@ -990,7 +1010,7 @@ textarea {
     
     .sidebar{
         position: sticky;
-        width: 219px;
+        width: 219rem;
     }
 }
 
@@ -1002,6 +1022,10 @@ textarea {
     .head {
         justify-content: space-between;
         
+    }
+
+    .box {
+          height: 181rem;
     }
 
     .table {
@@ -1073,13 +1097,14 @@ textarea {
     top: -10rem;
     right: 20rem;
 }
+
 .navigaption::before {
     content: '';
     position: absolute;
     display: block;
     top: 40rem;
     left: 40%;
-    width: 30%;
+    width: 20%;
     height: 30rem;
 
 }
@@ -1096,9 +1121,16 @@ textarea {
     border-radius: 3rem;
     z-index: 3;
 }
+
+  .usproject {
+        text-align: start;
+    }
+
     .cartku {
         justify-content: flex-start;
     }
+
+
 }
 
 @media screen  and (min-width: 1400px){
