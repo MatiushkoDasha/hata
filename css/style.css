@@ -461,8 +461,6 @@ header a  {
     position: absolute;
     left: 90%;
     top: 10%;
-    width: 40rem;
-    height: 40rem;
     fill: #a5a7a8;
     cursor: url(../img/tik.cur),default;
 }
@@ -504,6 +502,7 @@ article {
 
 .article_contact {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     gap: 100rem;
 }
@@ -810,9 +809,10 @@ tbody,td  {
 }
 
 .comunicate {
+    flex-wrap: wrap;
     align-items: flex-start;
     padding-top: 36rem;
-    gap: 28rem;
+    gap: 18rem;
 }
 
 .map {
@@ -842,6 +842,7 @@ iframe {
 }
 
 .inputs {
+    width: 100%;
     min-height: 221rem;
     box-sizing: content-box;
 }
@@ -856,7 +857,7 @@ input {
 }
 
 .input1 , .input2 {
-    max-width: 228rem;
+    min-width: 49%;
     padding-bottom: 10rem;
 }
 
@@ -866,12 +867,11 @@ input {
 
 .input4 {
     display: block;
-    max-width: 442rem;
     height: 81rem;
     box-sizing: border-box;
 }
 
-.inputbutton input {
+.buttonscheck  button {
     width: 140rem;
     height: 41rem;
     border: none;
@@ -881,7 +881,7 @@ input {
     cursor: url(../img/tik.cur),default;
 }
 
-.inputbutton input:hover{
+.buttonscheck  button:hover{
     background-color: #4a00c0;
 }
 
@@ -892,6 +892,7 @@ textarea {
     height: 100%;
     padding: 11rem;
     border-radius: 3rem;
+    box-sizing: border-box;
     background-color: #ffffff;
     border: 1rem solid #c5c5d4;
 }
@@ -933,11 +934,16 @@ textarea {
     transform: translate(-50%, -50%) scale(1);
 }
 
+.forms {
+    padding-bottom: 60rem;
+    width: 100%;
+}
 .forms p {
     font-size: 13rem;
     line-height: 21rem;
     color: #666666;
 }
+
 
 @media screen  and (min-width: 480px){
 
@@ -989,7 +995,6 @@ textarea {
     .map {
         position: relative;
         min-height: 371rem;
-        min-width: 376rem;
         overflow: hidden;
     }
 }
@@ -1012,6 +1017,8 @@ textarea {
         position: sticky;
         width: 219rem;
     }
+
+
 }
 
 @media screen  and (min-width: 834px){
@@ -1046,10 +1053,12 @@ textarea {
         background-color: #e4e4ec;
     }
 
+
     .map {
         position: relative;
         min-height: 371rem;
-        min-width: 466rem;
+      
+        width: 446rem;
         overflow: hidden;
 }
 }
@@ -1129,7 +1138,18 @@ textarea {
     .cartku {
         justify-content: flex-start;
     }
+    .forms {
+        width: 49%;
+    }
 
+    .map {
+          min-width: 376rem;
+    }
+
+    .input1 , .input2 {
+        min-width: 229rem;
+        padding-bottom: 10rem;
+}
 
 }
 

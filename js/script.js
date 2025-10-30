@@ -6,7 +6,8 @@ dzvin.onclick =  () => {
 darck.onclick =  () => {
     popup.style.display ="none"
     darck.style.display ="none"
-     navigaption.style.display ="none"
+    navigaption.style.display ="none"
+    popupdid.style.display = "none"
 }
 
 canel.onclick =  () => {
