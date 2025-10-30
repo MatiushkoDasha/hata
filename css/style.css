@@ -504,7 +504,7 @@ article {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 100rem;
+    gap: 30rem;
 }
 
 article li {
@@ -513,7 +513,7 @@ article li {
 
 article p {
     font-size: 14rem;
-    margin-bottom: 20rem;
+    margin-bottom: 6rem;
     line-height: 24rem;
     color: #666666;
 }
@@ -857,8 +857,9 @@ input {
 }
 
 .input1 , .input2 {
-    min-width: 49%;
+    min-width: 49.1%;
     padding-bottom: 10rem;
+    box-sizing: content-box;
 }
 
 .input3  {
@@ -872,7 +873,7 @@ input {
 }
 
 .buttonscheck  button {
-    width: 140rem;
+    width: 100%;
     height: 41rem;
     border: none;
     border-radius: 21rem;
@@ -898,6 +899,8 @@ textarea {
 }
 
 .buttonscheck {
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30rem;
 }
@@ -976,7 +979,7 @@ textarea {
     }
 
     .zagolovok {
-        padding-top: 20rem;
+        padding-top: 30rem;
         padding-bottom: 27rem;
         font-size: 30rem;
         color: #24242b;
@@ -997,6 +1000,13 @@ textarea {
         min-height: 371rem;
         overflow: hidden;
     }
+
+    .article_contact {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 60rem;
+}
 }
 
 @media screen  and (min-width: 768px){
@@ -1018,6 +1028,11 @@ textarea {
         width: 219rem;
     }
 
+    .input1 , .input2 {
+    min-width: 49%;
+    padding-bottom: 10rem;
+    box-sizing: content-box;
+}
 
 }
 
@@ -1053,6 +1068,14 @@ textarea {
         background-color: #e4e4ec;
     }
 
+       .zagolovok {
+        padding-top: 20rem;
+        padding-bottom: 27rem;
+        font-size: 30rem;
+        color: #24242b;
+        font-weight: 700;
+        font-family: "Roboto Slab";
+}
 
     .map {
         position: relative;
@@ -1060,6 +1083,13 @@ textarea {
       
         width: 446rem;
         overflow: hidden;
+}
+
+.article_contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 100rem;
 }
 }
 
@@ -1149,6 +1179,10 @@ textarea {
     .input1 , .input2 {
         min-width: 229rem;
         padding-bottom: 10rem;
+}
+
+.buttonscheck button {
+      width: 140rem;
 }
 
 }
